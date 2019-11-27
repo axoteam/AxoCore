@@ -1621,59 +1621,59 @@ int64_t GetBlockValue(int nHeight)
     }
 
 	if (nHeight == 0) {
-		nSubsidy = 0 * COIN; //Genesis             
-	}
-	else if (nHeight < 51 && nHeight > 0) { //Premine phase 200,000 coins in this phase 4k coins each block for 50 blocks
-		nSubsidy = 10000.0 * COIN;
-	}
-	else if (nHeight < 200 && nHeight > 51) { //PoW stage no reward for it
-		nSubsidy = 0 * COIN;
-	}
-	else if (nHeight < 20000 && nHeight > 201) {
-		nSubsidy = 5 * COIN;
-	}
-	else if (nHeight < 40000 && nHeight > 20001) {
-		nSubsidy = 15 * COIN;
-	}
-	else if (nHeight < 60000 && nHeight > 40001) {
-		nSubsidy = 20 * COIN;
-	}
-	else if (nHeight < 80000 && nHeight > 60001) {
-		nSubsidy = 25 * COIN;
-	}
-	else if (nHeight < 100000 && nHeight > 80001) {
-		nSubsidy = 27.5 * COIN;
-	}
-	else if (nHeight < 120000 && nHeight > 100001) {
-		nSubsidy = 30 * COIN;
-	}
-	else if (nHeight < 140000 && nHeight > 120001) {
-		nSubsidy = 32.5 * COIN;
-	}
-	else if (nHeight < 160000 && nHeight > 140001) {
-		nSubsidy = 37.5 * COIN;
-	}
-	else if (nHeight < 180000 && nHeight > 160001) {
-		nSubsidy = 40 * COIN;
-	}
-	else if (nHeight < 200000 && nHeight > 180001) {
-		nSubsidy = 42.5 * COIN;
-	}
-	else if (nHeight < 220000 && nHeight > 200001) {
-		nSubsidy = 37.5 * COIN;
-	}
-	else if (nHeight < 240000 && nHeight > 220001) {
-		nSubsidy = 35 * COIN;
-	}
-	else if (nHeight < 260000 && nHeight > 240001) {
-		nSubsidy = 32.5 * COIN;
-	}
-	else if (nHeight < 280000 && nHeight > 260001) {
-		nSubsidy = 30 * COIN;
-	}
-	else if (nHeight < 300000 && nHeight > 280001) {
-		nSubsidy = 27.5 * COIN;
-	}
+                nSubsidy = 0 * COIN; //Genesis
+        }
+        else if (nHeight < 50 && nHeight > 0) { //Premine phase 500,000 coins
+                nSubsidy = 10000.0 * COIN;
+        }
+        else if (nHeight < 200 && nHeight >= 50) { //PoW stage no reward for it
+                nSubsidy = 0 * COIN;
+        }
+        else if (nHeight < 20000 && nHeight >= 200) {
+                nSubsidy = 5 * COIN;
+        }
+        else if (nHeight < 40000 && nHeight >= 20000) {
+                nSubsidy = 15 * COIN;
+        }
+        else if (nHeight < 60000 && nHeight >= 40000) {
+                nSubsidy = 20 * COIN;
+        }
+        else if (nHeight < 80000 && nHeight >= 60000) {
+                nSubsidy = 25 * COIN;
+        }
+        else if (nHeight < 100000 && nHeight >= 80000) {
+                nSubsidy = 27.5 * COIN;
+        }
+        else if (nHeight < 120000 && nHeight >= 100000) {
+                nSubsidy = 30 * COIN;
+        }
+        else if (nHeight < 140000 && nHeight >= 120000) {
+                nSubsidy = 32.5 * COIN;
+        }
+        else if (nHeight < 160000 && nHeight >= 140000) {
+                nSubsidy = 37.5 * COIN;
+        }
+        else if (nHeight < 180000 && nHeight >= 160000) {
+                nSubsidy = 40 * COIN;
+        }
+        else if (nHeight < 200000 && nHeight >= 180000) {
+                nSubsidy = 42.5 * COIN;
+        }
+        else if (nHeight < 220000 && nHeight >= 200000) {
+                nSubsidy = 37.5 * COIN;
+        }
+        else if (nHeight < 240000 && nHeight >= 220000) {
+                nSubsidy = 35 * COIN;
+        }
+        else if (nHeight < 260000 && nHeight >= 240000) {
+                nSubsidy = 32.5 * COIN;
+        }
+        else if (nHeight < 280000 && nHeight >= 260000) {
+                nSubsidy = 30 * COIN;
+        }
+        else if (nHeight < 300000 && nHeight >= 280000) {
+                nSubsidy = 27.5 * COIN;
+        }
 	else if (nHeight < 300001) { //Till max supply 
 		nSubsidy = 25 * COIN;
 	}
