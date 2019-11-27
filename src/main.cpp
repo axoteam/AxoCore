@@ -1623,10 +1623,10 @@ int64_t GetBlockValue(int nHeight)
 	if (nHeight == 0) {
                 nSubsidy = 0 * COIN; //Genesis
         }
-        else if (nHeight < 50 && nHeight > 0) { //Premine phase 500,000 coins
+        else if (nHeight < 51 && nHeight > 0) { //Premine phase 500,000 coins
                 nSubsidy = 10000.0 * COIN;
         }
-        else if (nHeight < 200 && nHeight >= 50) { //PoW stage no reward for it
+        else if (nHeight < 200 && nHeight >= 51) { //PoW stage no reward for it
                 nSubsidy = 0 * COIN;
         }
         else if (nHeight < 20000 && nHeight >= 200) {
